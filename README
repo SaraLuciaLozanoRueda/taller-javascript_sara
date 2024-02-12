@@ -1,0 +1,109 @@
+# NEW DATE
+
+```
+console.log(new Date().getTime())
+1707762534036
+```
+
+te puede ayudar a calcular el tiempo en milisegundos desde una fecha predeterminada desde el 1 de enero de 1970 00:00:00
+
+```
+console.log(new Date().getTimezoneOffset())
+300
+```
+
+Retona la diferencia horaria en minutos para la hora local.
+
+
+
+| NEW DATE                                                     | **UTC**                                                      |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| **console.log (new Date().getDate()) 12 <br />**este nos muestra el dia solo el dia sin tener en cuneta otras razones. | **console.log(new Date().getUTCDate())** **12**<br />Retorna el día (fecha) del mes (`1`–`31`) para la fecha especificada acorde a la hora local. |
+| **console.log(new Date().getDay())** **1**<br />Obtiene el dia porque el domingo el dia 0 | **console.log(new Date().getUTCDay())1**<br />Retona el día de la semana (`0`–`6`) para la fecha especificada en hora universal. |
+| **console.log(new Date().getFullYear()) >*2024**<br />esta parte nos da el año. | **console.log(new Date().getUTCFullYear())2024<*<br/>***Retona el año (4 dígitos para años de 4 dígitos) para la fecha especificada acorde a la hora universal. |
+| **console.log(new Date().getHours())13**<br />este nos da la hora | **console.log(new Date().getUTCHours())**<br />Establece la hora para una fecha especifica acorde a la hora universal. |
+| **console.log(new Date().getMilliseconds())53**<br/>aqui nos da los millisegundos | **console.log(new Date().getUTCMilliseconds())948**<br/>Establece los milisegundos para una fecha especifica acorde a la hora universal. |
+| **console.log(new Date().getMinutes())12**<br/>muestra los minutos | **console.log(new Date().getUTCMinutes())53**<br/>Establece los minutos para una fecha especifica acorde a la hora universal. |
+| **console.log (new Date().getMonth()) 1**<br/>el mes de enero es 0. aqui se usa el mismo posicionamiento que en un array enero esta en la posicion 0.y asi con el resto. | **console.log(new Date().getUTCMonth()) 1**<br/>Establece el mes para una fecha especifica acorde a la hora universal. |
+| **console.log(new Date().getSeconds()) 1**<br/>muestra segundos | **console.log(new Date().getUTCSeconds())47**<br/>Establece los segundos para una fecha especifica acorde a la hora universal. |
+
+
+
+```
+console.log(new Date().getYear())
+124
+```
+
+este es un comando que ya no se recomienda y se prefiera usar getFullYear().
+
+- Para años mayores o iguales a 2000, el valor es 100 o mayor. Por ejemplo, si el año es 2026, `getYear()`devuelve 126.Bueno y nos dio 24 por que es el 2024.
+
+  
+
+```
+console.log(new Date().toDateString())
+ Mon Feb 12 2024
+```
+
+bueno y este es para que me salga la fecha completa sin necesidad de especificarle el day,month,date,year.
+
+```
+console.log(new Date().toISOString())
+2024-02-12T19:17:10.149Z
+console.log(new Date().toJSON())
+ 2024-02-12T19:24:15.027Z
+```
+
+Una cadena que representa la fecha dada en el formato de cadena de fecha y hora según la hora universal. 
+
+estas dos devuelven una caden acon el mismo formato.
+
+```
+console.log(new Date().toLocaleDateString())
+12/2/2024
+```
+
+este me devueleve la fecha especifica solo de dia,mes y año.
+
+```
+console.log(new Date().toLocaleTimeString())
+ 14:29:53
+```
+
+devuelve la hora en el horario militar
+
+```
+const event = new Date('February,12 2024 14:32:30');
+
+console.log(event.toString());
+Mon Feb 12 2024 14:32:30 GMT-0500 (hora estándar de Colombia)
+```
+
+nos devuelve la primera linea algo desordenada a un formato mas entendible y con dia incluido y zonas horarias
+
+```
+console.log(new Date().toTimeString())
+14:34:11 GMT-0500 (hora estándar de Colombia)
+```
+
+me da lo mismo que el anterior solo que en este no tenemos que darle los datos ya que lo toma directamente
+
+```
+console.log(new Date().toUTCString())
+Mon, 12 Feb 2024 19:35:50 GMT
+```
+
+cambia el formato en el que se presentan los resultados
+
+```
+const date2 = new Date('01 Jan 2024 00:00:00 GMT');
+
+console.log(date2.valueOf());
+1704067200000
+```
+
+tiempo en milisegundos desde la fecha indicada
+
+console.log(Symbol.toPrimitive)
+
+![ultimo](/home/user/Imágenes/Capturas de pantalla/ultimo.png)
