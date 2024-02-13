@@ -106,4 +106,3 @@ tiempo en milisegundos desde la fecha indicada
 
 console.log(Symbol.toPrimitive)
 
-![ultimo](/home/user/Imágenes/Capturas de pantalla/ultimo.png)
